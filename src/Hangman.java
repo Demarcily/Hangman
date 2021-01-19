@@ -14,12 +14,21 @@ public class Hangman {
       }
       else {
         guesses = guesses - 1;
-        System.out.println(guesses + " guesses left");
+        if (guesses > 1)
+          System.out.println(guesses + " guesses left");
+        else {
+          System.out.println(guesses + " guess left");
+
+        }
+
       }
     }
-
-    System.out.println("You won?");
-
+    if (guesses == 0) {
+      System.out.println("You lost");
+    }
+    else {
+      System.out.println("You Won");
+    }
   }
 }
 
