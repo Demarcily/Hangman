@@ -18,3 +18,7 @@ from an array or list
 
 I will also need to check how I can separate things into
 different methods
+
+* 2021-01-26
+
+Didn't get anything done unfortunately
