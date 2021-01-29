@@ -1,7 +1,19 @@
 import java.util.Scanner;
 
-public class Hangman {
+public class HangmanMethodTesting {
   public static void main(String [] args) {
+    Guesser(guesses);
+
+
+    if (guesses == 0) {
+      System.out.println("You're out of guesses");
+    }
+    else {
+      System.out.println("You Guessed it!");
+    }
+  }
+
+  private static void Guesser() {
     Scanner in = new Scanner(System.in);
     int guesses = 13;
     boolean checker = true;
@@ -23,12 +35,9 @@ public class Hangman {
 
       }
     }
-    if (guesses == 0) {
-      System.out.println("You're out of guesses");
-    }
-    else {
-      System.out.println("You Guessed it!");
-    }
-  }
-}
 
+  }
+
+
+
+}

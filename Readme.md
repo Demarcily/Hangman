@@ -22,3 +22,10 @@ different methods
 * 2021-01-26
 
 Didn't get anything done unfortunately
+
+* 2021-01-29
+
+Nearly impossible to focus and I was trying to get methods to work
+but I don't understand them very well.
+
+I will watch some yt videos on my free time.
