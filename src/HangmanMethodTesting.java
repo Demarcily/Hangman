@@ -7,8 +7,9 @@ public class HangmanMethodTesting {
     Scanner in = new Scanner(System.in);
     int guesses = 13;
     boolean checker = true;
-    RandomWord();
-    String answer = "Hello";
+    String answer = RandomWord();
+    System.out.println(answer);
+
 
 
     while (guesses > 0 && checker) {
@@ -26,10 +27,7 @@ public class HangmanMethodTesting {
       }
 
 
-
     }
-
-
     if (guesses == 0) {
       System.out.println("You're out of guesses\n" + "The word was: " + answer);
     }
@@ -39,7 +37,7 @@ public class HangmanMethodTesting {
   }
 
 
-  private static void RandomWord() {
+  private static String RandomWord() {
 
     Scanner list = null;
 
@@ -48,7 +46,7 @@ public class HangmanMethodTesting {
     } catch (FileNotFoundException e) {
       e.printStackTrace();
     }
-    String[] Word = new String[18];
+    String[] Word = new String[16];
     int count = 0;
 
     while(list.hasNext()) {
@@ -56,7 +54,8 @@ public class HangmanMethodTesting {
       count++;
     }
     int number = (int) (Math.random() * 18);
-    System.out.println(Word[number]);
+    String answer = (Word[number]);
+    return answer;
 
   }
 
