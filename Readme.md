@@ -29,3 +29,9 @@ Nearly impossible to focus and I was trying to get methods to work
 but I don't understand them very well.
 
 I will watch some yt videos on my free time.
+
+* 2021-02-02
+
+Made a method for picking a random word from a file and
+connected it to the main method, but I have a feeling I could've done it
+better

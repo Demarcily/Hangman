@@ -53,9 +53,8 @@ public class HangmanMethodTesting {
       Word[count] = list.next();
       count++;
     }
-    int number = (int) (Math.random() * 18);
-    String answer = (Word[number]);
-    return answer;
+    int number = (int) (Math.random() * 16);
+    return (Word[number]);
 
   }
 
