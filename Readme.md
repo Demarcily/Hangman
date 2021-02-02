@@ -35,3 +35,6 @@ I will watch some yt videos on my free time.
 Made a method for picking a random word from a file and
 connected it to the main method, but I have a feeling I could've done it
 better
+
+Moved over testing to the main java.class now that the test is successful,
+now I have to start another test for individual letters.
