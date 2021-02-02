@@ -1,3 +1,5 @@
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Hangman {
@@ -5,7 +7,8 @@ public class Hangman {
     Scanner in = new Scanner(System.in);
     int guesses = 13;
     boolean checker = true;
-    String answer = "Hello";
+    String answer = RandomWord();
+    System.out.println(answer);
 
 
 
@@ -24,10 +27,7 @@ public class Hangman {
       }
 
 
-
     }
-
-
     if (guesses == 0) {
       System.out.println("You're out of guesses\n" + "The word was: " + answer);
     }
@@ -36,6 +36,27 @@ public class Hangman {
     }
   }
 
+
+  private static String RandomWord() {
+
+    Scanner list = null;
+
+    try {
+      list = new Scanner(new File("RandomWord"));
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    }
+    String[] Word = new String[16];
+    int count = 0;
+
+    while(list.hasNext()) {
+      Word[count] = list.next();
+      count++;
+    }
+    int number = (int) (Math.random() * 16);
+    return (Word[number]);
+
+  }
 
 
 }
